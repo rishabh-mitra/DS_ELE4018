@@ -5,11 +5,10 @@
 int main( void )
 {
 	int n1,n2;
-	float div;
-	printf ("Enter 2 numbers : \n");
-	scanf("%d",&n1);
-	scanf("%d",&n2);
-	div = float(n1/n2);
-	printf("The result of %d/%d is = %9.3f \n",n1,n2,div);
+	double div;
+	printf("Enter the dividend and the divisor \n");
+	scanf("%d %d",&n1,&n2);
+	div = (double)n1/(double)n2;
+	printf("The quotient of %d and %d is = %.3e \n",n1,n2,div);
 	return 0;
 }
